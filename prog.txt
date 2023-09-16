@@ -1,0 +1,77 @@
+def longest_len():
+    str1=input("Enter the string:")
+    list1=str1.split()
+    m=0
+    n=0
+    print(list1)
+    for i in range(len(list1)):
+        len(list1[i])
+        if(m<len(list1[i])):
+            m=len(list1[i])
+            n=i
+    print("Word with longest length is:",
+    list1[n])
+    
+def freq():
+    print=("Enter the string")
+    str1=input()
+    char=input("Enter character")
+    print(str1)
+    x=0
+    for i in range(len(str1)):
+        if(char==str1[i]):
+            x=x+1
+    print("the character %s is present %i times in the given string %s" %(char,x,str1))
+    
+def count():
+    str1=input("Enter string")
+    list1=str1.split()
+    list2=set(list1)
+    list3=list(list2)
+    print(list1)
+    print(list3)
+    list4=[]
+    list5=[]
+    count=0
+    for i in range(len(list3)):
+        count=0
+        for j in range(len(list1)):
+            if(list3[i]==list1[i]):
+                 count=count+1
+        list4=list3[i],count
+        list5.append(list4)
+        print("count:,list5")
+
+def showlist():
+    print("select choice from the following \n")
+    print("enter 1 to display word with longest lenght \n"
+    )
+    print("enter 2 to determine the frequency of occurrence of particular character\n")
+    print("enter 3 to check if string is palindrome\n"
+    )
+    print("enter 4 to display index of first appearance of substring\n")
+    print("enter 5 to count occurrance of each word of string \n")
+    print("enter 6 to exit \n")
+showlist()
+
+while true:
+    choice=int(input("enter choice"))
+    if(choice==1):
+         print(longest_len())
+    elif(choice==2):
+             print(freq())
+    elif(choice===3):
+             print(palindrome())
+    elif(choice==4):
+             print(index())
+    elif(choice==5):
+             print(count()) 
+    elif(choice==6):
+              false
+    else:
+              print("enter valid choice")
+             print(index())
+        
+        
+    
+    

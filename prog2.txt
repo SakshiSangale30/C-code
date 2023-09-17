@@ -39,5 +39,3 @@ size=max(m,n)
     
 print("sum polynomial is")
 printpoly(sum,size) 
-
-gdasghvda
